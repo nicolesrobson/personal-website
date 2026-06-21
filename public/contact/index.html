@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head> 
+<body>
+
+<header class="desktop-header">
+  <div="logo">
+      <a href="/">Nicole Robson</a>
+  </div>
+</header>
+
+<!-- Sidebar Container -->
+<div class="sidebar">
+    <nav>
+        <a href="/biography/">Biography</a> 
+        <a href="/research/">Research</a>
+        <a href="/publications/">Publications</a>
+        <br>
+        <span id="select-projects"><em>Select Projects</em></span>
+         
+          <li>
+            <a
+              href="/moments-of-grace/"
+              class=""
+            >
+              Moments of Grace
+            </a>
+          </li>
+        
+          <li>
+            <a
+              href="/can-this-place-be-a-temple/"
+              class=""
+            >
+              Can This Place be a Temple?
+            </a>
+          </li>
+        
+          <li>
+            <a
+              href="/Bala-Trilogy/"
+              class=""
+            >
+              Optics, Laboured
+            </a>
+          </li>
+        
+          <li>
+            <a
+              href="/the-texture-of-air/"
+              class=""
+            >
+              The Texture of Air
+            </a>
+          </li>
+        
+          <li>
+            <a
+              href="/the-conversation-booth/"
+              class=""
+            >
+              The Conversation Booth
+            </a>
+          </li>
+        
+          <li>
+            <a
+              href="/sonographies/"
+              class=""
+            >
+              Sonographies
+            </a>
+          </li>
+        
+        <br>
+        hello(at)nicolerobson.com
+        <a href="https://instagram.com/nicolerobson" target="_blank">@nicolerobson</a>
+    </nav>
+</div>
+
+<div class="content"> 
+<header class="mobile-header">
+  <div class="logo">
+      <a href="/">Nicole Robson</a>
+  </div>
+  <!-- Menu toggle (hamburger) -->
+  <button id="menuToggle" aria-label="Open menu">☰</button>
+</header>
+
+<!-- Mobile menu -->
+  <nav id="mobileMenu" class="menu">
+      <button id="menuClose" aria-label="Close menu">✕</button>
+
+      <ul>
+      <li><a href="/biography/">Biography</a></li>
+      <li><a href="/research/">Research</a></li>
+      <li><a href="/publications/">Publications</a></li>
+      <li><br></li>
+
+      
+      <li>
+        <a
+          href="/moments-of-grace/"
+          class=""
+        >
+          Moments of Grace
+        </a>
+      </li>
+      
+      <li>
+        <a
+          href="/can-this-place-be-a-temple/"
+          class=""
+        >
+          Can This Place be a Temple?
+        </a>
+      </li>
+      
+      <li>
+        <a
+          href="/Bala-Trilogy/"
+          class=""
+        >
+          Optics, Laboured
+        </a>
+      </li>
+      
+      <li>
+        <a
+          href="/the-texture-of-air/"
+          class=""
+        >
+          The Texture of Air
+        </a>
+      </li>
+      
+      <li>
+        <a
+          href="/the-conversation-booth/"
+          class=""
+        >
+          The Conversation Booth
+        </a>
+      </li>
+      
+      <li>
+        <a
+          href="/sonographies/"
+          class=""
+        >
+          Sonographies
+        </a>
+      </li>
+      
+
+      <li><br></li>
+      <li><a href="/contact/">hello(at)nicolerobson.com</a></li>
+      <li><a href="#">@nicolerobson</a></li>
+      </ul>
+  </nav>
+  
+  <div class="row">
+  <div class="column">
+    <b>Email</b>
+    <br>hello@nicolerobson.com
+  </div>
+  <div class="column">
+    <b>Social</b>
+    <br>Instagram
+    <br>Soundcloud 
+    <br>LinkedIn 
+    <br>ResearchGate 
+  </div>
+</div>
+</div>
+
+</body>
+</html> 
+
+<script>
+const toggle = document.getElementById("menuToggle");
+const closeBtn = document.getElementById("menuClose");
+const menu = document.getElementById("mobileMenu");
+const links = menu.querySelectorAll("a");
+
+function openMenu() {
+  menu.classList.add("active");
+  document.body.style.overflow = "hidden";
+
+  // Focus first link
+  const firstLink = menu.querySelector("a, button");
+  if (firstLink) firstLink.focus();
+}
+
+function closeMenu() {
+  menu.classList.remove("active");
+  document.body.style.overflow = "";
+  toggle.focus(); // return focus to button
+}
+
+// Toggle buttons
+toggle.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeMenu);
+
+// Close on link click
+links.forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
+
+// ESC key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeMenu();
+  }
+});
+
+// Focus trap
+(function trapFocus() {
+  const focusableSelectors = "a, button";
+  const focusableElements = menu.querySelectorAll(focusableSelectors);
+
+  if (!focusableElements.length) return;
+
+  const firstEl = focusableElements[0];
+  const lastEl = focusableElements[focusableElements.length - 1];
+
+  menu.addEventListener("keydown", (e) => {
+    if (e.key !== "Tab") return;
+
+    if (e.shiftKey && document.activeElement === firstEl) {
+      e.preventDefault();
+      lastEl.focus();
+    } else if (!e.shiftKey && document.activeElement === lastEl) {
+      e.preventDefault();
+      firstEl.focus();
+    }
+  });
+})();
+
+const players = document.querySelectorAll(".player");
+
+function formatTime(seconds) {
+  if (isNaN(seconds)) return "0:00";
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
+}
+
+players.forEach((player) => {
+  const audio = player.querySelector(".audio");
+  const btn = player.querySelector(".playPauseBtn");
+  const icon = player.querySelector(".icon");
+  const timeDisplay = player.querySelector(".time");
+  const progress = player.querySelector(".progress");
+  const progressContainer = player.querySelector(".progress-container");
+
+  btn.addEventListener("click", async () => {
+    try {
+      if (audio.paused) {
+        document.querySelectorAll(".audio").forEach((otherAudio) => {
+          if (otherAudio !== audio) {
+            otherAudio.pause();
+
+            const otherPlayer = otherAudio.closest(".player");
+            const otherIcon = otherPlayer.querySelector(".icon");
+            const otherProgress = otherPlayer.querySelector(".progress");
+
+            otherIcon.innerHTML = `
+              <polygon points="5,3 19,12 5,21" fill="currentColor"></polygon>
+            `;
+
+            otherProgress.style.width = "0%";
+          }
+        });
+
+        await audio.play();
+        icon.innerHTML = `
+          <rect x="6" y="4" width="4" height="16" fill="currentColor"></rect>
+          <rect x="14" y="4" width="4" height="16" fill="currentColor"></rect>
+        `;
+      } else {
+        audio.pause();
+        icon.innerHTML = `
+          <polygon points="5,3 19,12 5,21" fill="currentColor"></polygon>
+        `;
+      }
+    } catch (err) {
+      console.error("Playback failed:", err);
+    }
+  });
+
+  audio.addEventListener("loadedmetadata", () => {
+    timeDisplay.textContent = `0:00 / ${formatTime(audio.duration)}`;
+  });
+
+  audio.addEventListener("timeupdate", () => {
+    if (audio.duration) {
+      const percent = (audio.currentTime / audio.duration) * 100;
+      progress.style.width = percent + "%";
+    }
+
+    timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+  });
+
+  progressContainer.addEventListener("click", (e) => {
+    if (!audio.duration) return;
+    const width = progressContainer.clientWidth;
+    const clickX = e.offsetX;
+    audio.currentTime = (clickX / width) * audio.duration;
+  });
+
+  audio.addEventListener("ended", () => {
+    icon.innerHTML = `
+      <polygon points="5,3 19,12 5,21" fill="currentColor"></polygon>
+    `;
+    progress.style.width = "0%";
+  });
+});
+</script>

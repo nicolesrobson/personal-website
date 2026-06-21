@@ -1,0 +1,346 @@
+  body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f4f4f4;
+      font-size: 1.3rem;
+      line-height: 1.4;
+      letter-spacing: -.02rem;
+      font-weight: 400;
+      text-rendering: optimizeLegibility;
+      color: #246f15;
+      font-style: normal;
+      margin: 20px;
+      padding: 0;
+      -webkit-font-smoothing: antialiased
+  }
+
+
+  .desktop-header a {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #246f15;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+  }
+
+  /* Desktop only */
+  .desktop-header {
+    display: block;
+    position: fixed;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  /* Mobile only */
+  @media (max-width: 767px) {
+    .desktop-header {
+      display: none;
+    }
+
+    .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .mobile-header a {
+      text-decoration: none;
+    }
+
+    .mobile-header h1 {
+      margin: 0;
+    }
+
+    #menuToggle {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+  }
+
+.project-header p {
+  margin-top: 0;
+}
+
+.menu a.current {
+  background-color: rgb(237, 196, 196);
+  padding: 1px;
+}
+
+  a {
+    color: #246f15;
+    text-decoration: underline;
+  }
+
+  h2 {
+      font-size: inherit;
+      font-weight: 400;
+  }
+
+  h3 {
+      font-size: 1.2rem;
+      font-weight: 400;
+  }
+
+  h2, h3 {
+      display: inline;
+  }
+
+  mark {
+    color: green;
+    background-color: rgb(237, 196, 196);
+    padding: 1px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* optional for layout */
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* The side navigation menu */
+  .sidebar {
+    font-size: 1.2rem;
+    padding: 0;
+    width: 250px;
+    position: fixed;
+    overflow: auto;
+    bottom: 20px;
+  } 
+
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: inherit;
+    padding: 0;
+    text-decoration: none;
+  } 
+
+  #select-projects {
+    font-size: 1.1rem;
+    color: grey;
+  }
+  /* Active/current link 
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 250px;
+    padding: 1px 16px;
+  }
+
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .column { 
+    float: left;
+    width: 50%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .small-indented {
+      font-size: 1.2rem;
+      margin-left: 30px;
+  }
+
+  footer {
+      font-size: 0.8rem;
+  }
+
+  .grey-text {
+      color: grey;
+  }
+
+  .portrait {
+      max-height: 35rem;
+      
+  }
+
+  /* Hide menu by default */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(237, 196, 196);
+    color: white;
+    display: flex;
+    padding-left: 16px;
+    padding-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 1.8rem;
+  }
+
+  /* When active */
+  .menu.active {
+    opacity: 1;
+    pointer-events: auto; 
+  }
+
+  /* Buttons */
+  #menuToggle, #menuClose {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #246f15;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  #menuClose {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding-right: 16px;
+    color: #246f15;
+  }
+
+  /* Menu links 
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  } */
+
+  .menu li {
+    margin: 0px 0;
+  }
+
+  .menu a {
+    color: #246f15;
+    display: block;
+    font-size: 1.8rem;
+    text-decoration: none;  
+  }
+
+  /* 🔑 Only show on small screens */
+  @media (min-width: 768px) {
+    #menuToggle {
+      display: none;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  /* 🔑 Only show on desktop screens */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    } 
+  }
+
+  /* iFrame container - fllowing w3 schools tutorial*/
+  .iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-caption {
+    font-size: 0.9rem;
+    color: grey;
+    text-align: center;
+    text-transform: italic;
+  }
+
+  .player {
+      width: min(90%, 400px);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: 40px auto;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #246f15;
+  }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .time {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .progress-container {
+      margin-top: 15px;
+      height: 6px;
+      background: #246f15;
+      border-radius: 3px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0%;
+      background: rgb(237, 196, 196);
+      border-radius: 3px;
+      transition: width 0.1s linear;
+    }

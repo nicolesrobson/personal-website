@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+<span class="project-header">
+    <p><em>{{ title }}</em>, ({{ dates }})
+    <br>{{ tagline }}</p>
+</span>
+
+
+{% if image %}
+    <div class="hero-image">
+    <img src="{{ image }}" alt="{{ image-title }}">
+    </div>
+{% endif %}
+
+<div class="project-text">
+    {{ content | safe }}
+</div>
