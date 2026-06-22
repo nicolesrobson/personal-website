@@ -12,6 +12,7 @@ Concealed in near silence, the sound installation <em>Sonographies</em> explores
 
 <em>Sonographies</em> is created by Nicole Robson with curatorial support from Eva Martinez and is supervised by Prof. Andrew McPherson and Prof. Nick Bryan-Kinns. The work is supported by the EPSRC grant EP/L01632X/1 (Centre for Doctoral Training in Media and Arts Technology at Queen Mary University of London) and by the Royal Academy of Engineering under the Research Chairs and Senior Research Fellowships scheme.
 
+<!--
 <div class="row">
   <div class="column">
   Video Excerpt 1
@@ -22,8 +23,8 @@ Concealed in near silence, the sound installation <em>Sonographies</em> explores
     Your browser does not support the video tag.
     </video>    
   </div>
-</div>
+</div>-->
 
-<b>Exhibition</b>
+<em>Exhibition</em>
 <br>2-4 & 9-11 February, 2024
 <br>no format Gallery, London, SE14 6BN
