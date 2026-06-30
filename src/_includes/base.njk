@@ -36,7 +36,7 @@
           </li>
         {% endfor %}
         <br>
-        hello(at)nicolerobson.com
+        <li><a href="mailto:hello@nicolerobson.com">hello@nicolerobson.com</a></li>
         <a href="https://instagram.com/nicolerobson" target="_blank">@nicolerobson</a>
     </nav>
 </div>
@@ -60,19 +60,20 @@
       <li><a href="/publications/">Publications</a></li>
       <li><br></li>
 
-      {% for item in collections.pages %}
-      <li>
-        <a
-          href="{{ item.url }}"
-          class="{% if item.url == page.url %}current{% endif %}"
-        >
-          {{ item.data.title }}
-        </a>
-      </li>
-      {% endfor %}
+      <span id="select-projects"><em>Select Projects</em></span>
+         {% for item in collections.navPages %}
+          <li>
+            <a
+              href="{{ item.url }}"
+              class="{% if item.url == page.url %}current{% endif %}"
+            >
+              {{ item.data.title }}
+            </a>
+          </li>
+        {% endfor %}
 
       <li><br></li>
-      <li><hello(at)nicolerobson.com</li>
+      <li><a href="mailto:hello@nicolerobson.com">hello@nicolerobson.com</a></li>
       <li><a href="https://www.instagram.com/nicolerobson">@nicolerobson</a></li>
       </ul>
   </nav>
