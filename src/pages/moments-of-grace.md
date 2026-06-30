@@ -4,6 +4,7 @@ permalink: /moments-of-grace/
 dates: 2020-2026, In Progress
 tagline: Sound and light installation for Guy's and St Thomas' NHS Foundation Trust
 image: /images/circadia-alcove.jpg
+navOrder: 2
 ---
 
 <em>Moments of Grace</em> is a sound and light installation to be permanently installed at St Thomas' Hospital in central London.
@@ -12,7 +13,7 @@ Nurses and midwives are with us at every hour of the day and night, even when ou
 
 <em>Moments of Grace</em> will distil 24-hour presence into a 24-7 interactive sound and light composition, starting with your time of listening. It will be installed in physical space at Guy's and St Thomas' Hospital, in 2026. 
 
-Visit the proof of concept website <a href="" target="">here</a>.
+Visit the proof of concept website <a href="https://momentsofgrace.uk/" target="_blank">here</a>.
 
 <div class="column">
     <em>Credits</em>

@@ -4,6 +4,7 @@ permalink: /sonographies/
 dates: 2024, ongoing
 tagline: Eight-channel ultrasonic installation
 image: /images/sonographies1.png
+navOrder: 1
 ---
 
 Concealed in near silence, the sound installation <em>Sonographies</em> explores hidden and intimate spaces of experience. An eight-channel composition sounds physically in the gallery space but above the range of human hearing. Unstable and sensitive to movements of the body, an alternate acoustic landscape is revealed to individual listeners wearing wireless headphones created specially for the work. <em>Sonographies</em> is an invitation to dwell in sound, to probe space with your listening, and to notice how your body meets with sound and space. Drawing on themes of interior and domestic space, miniature and barely audible sounds of the home expand into the gallery space as immersive, sonic landscapes comprising field recordings, instrumental tones, and synthesised layers.

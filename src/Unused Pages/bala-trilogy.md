@@ -4,6 +4,7 @@ dates: 2024, ongoing
 permalink: /Bala-Trilogy/
 tagline: Musical composition for Anjana Bala's trilogy of dance films 
 image: /images/nicole_listening1.jpg
+navOrder: 999
 ---
 
 This poignant film is a contemporary South Asian dance work that draws upon Indian classical rhythms, shapes, and geometries. Created by dance artist and anthropologist Anjana Bala alongside talented collaborators, the film uses optics as a metaphor for visibility, exploring how we pursue it and the emotional consequences it entails.

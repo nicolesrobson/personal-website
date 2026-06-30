@@ -4,6 +4,7 @@ permalink: /can-this-place-be-a-temple/
 dates: 2023- 2024
 tagline: Musical composition and sound design for Akshay Sharma's solo dance work
 image: /images/ctpbt_2.jpg
+navOrder: 3
 ---
 
 <em>Can This Place be a Temple?</em> is a poetic and compelling solo work exploring the question of refuge and safety, touching on themes of race, gender, migration and nature by weaving together dance, spoken word and live singing. Drawing upon personal experience and myth, the piece is an invitation to journey through fear into trust and freedom.

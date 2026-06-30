@@ -4,6 +4,7 @@ permalink: /the-conversation-booth/
 dates: 2018- 19
 tagline: Sound installation for community conversation and listening 
 image: /images/convo_collage1.png
+navOrder: 5
 ---
 
 <em>The Conversation Booth</em> is a pop-up sound installation that invites visitors to record themselves discussing a particular topic or question. Their responses are automatically archived by a computer program and recomposed as a living speech collage heard on wireless headphones at the installation and later at the project website.
@@ -15,7 +16,7 @@ The project emerged in collaboration with Olivia Bellas, during work on public a
 <img src="/images/Arrival.jpg">
 <div class="image-caption">Conversation in full flow at the London City Hall event.</div>
 
-<b>Installations</b>
+<em>Installations</em>
 <br>Museum of London: "What is your experience of pirate radio?" (2019)
 <br>The Collective, Old Oak: "What surprises, worries, or fascinates you about your local area?" (2018)
 <br>Woolwich Library: "What does community mean for you?" (2018)
